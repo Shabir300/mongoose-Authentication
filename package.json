@@ -1,0 +1,19 @@
+{
+  "name": "mongoose",
+  "version": "1.0.0",
+  "description": "simple site for mongoose practice",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon backend/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^8.15.1",
+    "nodemon": "^3.1.10"
+  }
+}
