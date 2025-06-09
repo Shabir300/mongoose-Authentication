@@ -1,5 +1,6 @@
 import express from 'express';
 import { deleteGoal, getGoals, setGoal, updateGoal } from '../controllers/goalController.js';
+import protect from '../middlewares/authMiddleware.js';
 
 const router = express.Router();
 
