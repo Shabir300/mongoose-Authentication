@@ -59,7 +59,7 @@ export const loginUser = expressAsyncHandler(async(req, res) => {
             sameSite: false,
             secure: true
         })
-        res.status(200).send('You are logged In dear!');
+        res.status(200).json(token);
     } else {
         res.status(404);
         throw new Error('Incorrect email and password')

@@ -5,9 +5,9 @@ const protect = async (req, res, next) => {
     // console.dir(req, { depth: 1 });
     // console.log('token HERE', req.cookies);
     // next();
-    const token = req.headers.authorization.split(' ')[1];
-// const token = req.headers.cookies.userToken;
-   try {
+    try {
+         // const token = req.headers.cookies.userToken;
+        const token = req.headers.authorization.split(' ')[1];
         const {userId} = jwt.verify(token, 'abc123abc');
      //    console.log('HERE IS USERID', userId);
           const user = await userModel.findOne({_id: userId}).select('-password');
