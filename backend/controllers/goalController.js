@@ -61,5 +61,5 @@ export const deleteGoal = asyncHandler(async(req, res) => {
     }
 
     const deletedGoal = await goalModel.findByIdAndDelete(req.params.id);
-    res.status(204).json(deletedGoal)
+    res.status(204).json(deletedGoal);
 });
